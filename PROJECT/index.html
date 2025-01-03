@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <label
+          ><input id="new-customer" type="radio" name="customer-type" /> New
+          Customer</label
+        >
+        <label
+          ><input
+            id="returning-customer"
+            type="radio"
+            name="customer-type"
+            checked
+          />
+          Returning Customer</label
+        >
+      </fieldset>
+      <h1>Login to your account</h1>
+      <a href="https://www.facebook.com/login">
+        <img src="facebook.png" alt="Continue with Facebook" />
+        Continue with Facebook
+      </a>
+      <p>
+        We will never post on your behalf or share any information without your
+        permission.
+      </p>
+      <legend>OR</legend>
+      <form method="post">
+        <fieldset>
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter your email" />
+
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" />
+
+          <a href="#" class="forgot-password">Forgot your password?</a>
+
+          <div class="keep-signed-in">
+            <input type="checkbox" id="keep-signed-in" />
+            <label for="keep-signed-in">Keep me signed in</label>
+          </div>
+
+          <button type="submit">LOG IN</button>
+        </fieldset>
+      </form>
+      <p class="terms">
+        By creating your account or signing in, you agree to our
+        <a href="#">Terms and Conditions</a> & <a href="#">Privacy Policy</a>.
+      </p>
+    </div>
+  </body>
 </html>
